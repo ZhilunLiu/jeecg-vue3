@@ -91,15 +91,15 @@
                     <a-button :loading="loginLoading" class="aui-link-login aui-flex-box" type="primary" @click="loginHandleClick">
                       {{ t('sys.login.loginButton') }}</a-button>
                   </div>
-                  <div class="aui-flex">
+                  <!-- <div class="aui-flex">
                     <a class="aui-linek-code aui-flex-box" @click="codeHandleClick">{{ t('sys.login.qrSignInFormTitle') }}</a>
-                  </div>
+                  </div> -->
                   <div class="aui-flex">
                     <a class="aui-linek-code aui-flex-box" @click="registerHandleClick">{{ t('sys.login.registerButton') }}</a>
                   </div>
                 </div>
               </div>
-              <a-form @keyup.enter.native="loginHandleClick">
+              <!-- <a-form @keyup.enter.native="loginHandleClick">
                 <div class="aui-flex aui-third-text">
                   <div class="aui-flex-box aui-third-border">
                     <span>{{ t('sys.login.otherSignIn') }}</span>
@@ -127,7 +127,7 @@
                     </div>
                   </div>
                 </div>
-              </a-form>
+              </a-form> -->
             </div>
           </div>
         </div>
