@@ -20,6 +20,7 @@ import { registerThirdComp } from '/@/settings/registerThirdComp';
 import { useSso } from '/@/hooks/web/useSso';
 // 注册online模块lib
 import { registerPackages } from '/@/utils/monorepo/registerPackages';
+import baiduMap from 'vue3-baidu-map-gl'
 
 // 在本地开发中引入的,以提高浏览器响应速度
 if (import.meta.env.DEV) {
@@ -28,6 +29,11 @@ if (import.meta.env.DEV) {
 async function bootstrap() {
   // 创建应用实例
   const app = createApp(App);
+
+  app.use(baiduMap, {
+    ak: 'yPMtyXRPul6hnA6ctY2P49lcySB9INlH',
+    plugins: ['TrackAnimation']
+  })
 
   // 多语言配置,异步情况:语言文件可以从服务器端获得
   await setupI18n(app);

@@ -165,6 +165,9 @@ dependencies:
   vue-types:
     specifier: ^4.1.1
     version: 4.1.1(vue@3.2.47)
+  vue3-baidu-map-gl:
+    specifier: ^2.2.2
+    version: 2.2.2(vue@3.2.47)
   vuedraggable:
     specifier: ^4.1.0
     version: 4.1.0(vue@3.2.47)
@@ -354,7 +357,7 @@ devDependencies:
     specifier: ^3.0.2
     version: 3.0.2
   rollup:
-    specifier: ^2.70.2
+    specifier: ^2.72.0
     version: 2.72.0
   rollup-plugin-visualizer:
     specifier: ^5.6.0
@@ -3313,7 +3316,7 @@ packages:
   /@types/keyv@3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 17.0.25
+      '@types/node': 17.0.45
     dev: true
 
   /@types/lodash-es@4.17.6:
@@ -3409,7 +3412,7 @@ packages:
   /@types/responselike@1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 17.0.25
+      '@types/node': 17.0.45
     dev: true
 
   /@types/semver@7.5.0:
@@ -13892,6 +13895,17 @@ packages:
       vue: 3.2.47
       vue-observe-visibility: 0.4.6
       vue-resize: 0.4.5(vue@3.2.47)
+    dev: false
+
+  /vue3-baidu-map-gl@2.2.2(vue@3.2.47):
+    resolution: {integrity: sha512-0qRU6WTv2ZAlunmI3sQfP/P+CcqLRFWZXanz8BCs+qlMepfegvHK/komB0a0UXBq4OAdEdyx42e/4LvAolEdjQ==}
+    engines: {node: '>=12.0.0', pnpm: '>=6.0.0'}
+    requiresBuild: true
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      mitt: 3.0.1
+      vue: 3.2.47
     dev: false
 
   /vue3-colorpicker@2.2.2(@aesoper/normal-utils@0.1.5)(@popperjs/core@2.11.8)(@vueuse/core@6.9.2)(gradient-parser@1.0.2)(lodash-es@4.17.21)(tinycolor2@1.6.0)(vue-types@4.1.1)(vue@3.2.47):
