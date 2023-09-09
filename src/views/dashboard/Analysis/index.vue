@@ -47,6 +47,7 @@
 
   function handleInitd() {
     get("长沙市岳麓区中海阅江府","长沙市")
+    map.value.resetCenter()
   }
 
 

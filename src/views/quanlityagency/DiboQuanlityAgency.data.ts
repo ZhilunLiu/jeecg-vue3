@@ -17,7 +17,7 @@ export const columns: BasicColumn[] = [
   {
     title: '管辖区域',
     align: "center",
-    dataIndex: 'area_dictText'
+    dataIndex: 'area'
   },
   {
     title: '联系人',
@@ -57,7 +57,7 @@ export const formSchema: FormSchema[] = [
     field: 'area',
     component: 'JDictSelectTag',
     componentProps:{
-      dictCode: ""
+      dictCode: "area"
     },
   },
   {

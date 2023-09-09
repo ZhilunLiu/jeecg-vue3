@@ -17,7 +17,7 @@ export const columns: BasicColumn[] = [
   {
     title: '角色',
     align: "center",
-    dataIndex: 'roles'
+    dataIndex: 'role'
   },
   {
     title: '部门',
