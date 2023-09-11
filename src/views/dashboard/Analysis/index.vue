@@ -1,8 +1,8 @@
 <template>
   <a-layout>
     <a-layout-content :style="{minHeight: '800px'}">
-      <BMap ref = "map" height="100%" center="长沙市" zooom="12" enableScrollWheelZoom="true" @initd="handleInitd">
-        <BMarker :position="point" @click="show=!show" icon="simple_red"></BMarker>
+      <BMap ref = "map" height="100%" center="长沙市" zooom="13" enableScrollWheelZoom="true" @initd="handleInitd">
+        <BMarker :position="point" @click="show=!show" icon="simple_red" :visible="false"></BMarker>
         <BInfoWindow v-model:show="show" :position="point" :title="addrText" enableAutoPan :enableCloseOnClick="false" />
       </BMap>
     </a-layout-content>
